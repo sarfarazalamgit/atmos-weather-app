@@ -3,7 +3,7 @@
 A modern, responsive weather application built with **React**, **TypeScript**, and **Tailwind CSS**. It features real-time weather data, dark mode, geolocation support, and comprehensive unit testing.
 
 ## 🚀 Live Demo
-[View Live App](https://weather-app-pro-ten.vercel.app/)
+[View Live App](https://atmos-weather-application.vercel.app/)
 
 ## ✨ Features
 - **Real-time Weather:** Fetches data from OpenWeatherMap API.
@@ -22,7 +22,7 @@ A modern, responsive weather application built with **React**, **TypeScript**, a
 
 ## 🏗️ Project Structure
 ```text
-weather-app-pro/
+atmos-weather-app/
 ├── .env                  # Environment variables (API Key)
 ├── .gitignore            # Git ignore rules
 ├── LICENSE               # MIT License
