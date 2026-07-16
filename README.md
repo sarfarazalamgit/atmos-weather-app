@@ -54,7 +54,7 @@ atmos-weather-app/
 ```bash
 npm run test
 📦 Installation
-Clone the repo: git clone https://github.com/sarfarazalamgit/weather-app-pro.git
+Clone the repo: git clone https://github.com/sarfarazalamgit/atmos-weather-app.git
 Install dependencies: npm install
 Create a .env file and add VITE_WEATHER_API_KEY=your_key
 Start dev server: npm run dev
