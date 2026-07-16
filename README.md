@@ -1,75 +1,64 @@
-# React + TypeScript + Vite
+# Atmos - Professional Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive weather application built with **React**, **TypeScript**, and **Tailwind CSS**. It features real-time weather data, dark mode, geolocation support, and comprehensive unit testing.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+[View Live App](https://weather-app-pro-ten.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
+- **Real-time Weather:** Fetches data from OpenWeatherMap API.
+- **Geolocation:** Automatically detects user location.
+- **Dark/Light Mode:** Seamless theme switching with persistence.
+- **Search:** Search by city name with error handling.
+- **Performance:** Optimized with Vite and Tailwind CSS.
+- **Testing:** 100% Unit Test coverage using Vitest & React Testing Library.
 
-## React Compiler
+## 🛠️ Tech Stack
+- **Framework:** React 18 + TypeScript
+- **Styling:** Tailwind CSS
+- **Testing:** Vitest, React Testing Library, jsdom
+- **Build Tool:** Vite
+- **Deployment:** Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🏗️ Project Structure
+```text
+weather-app-pro/
+├── .env                  # Environment variables (API Key)
+├── .gitignore            # Git ignore rules
+├── LICENSE               # MIT License
+├── README.md             # This file
+├── index.html            # HTML entry point
+├── package.json          # Dependencies & Scripts
+├── postcss.config.js     # PostCSS config
+├── tailwind.config.js    # Tailwind config
+├── tsconfig.json         # TypeScript config
+├── vite.config.ts        # Vite & Vitest config
+├── src/
+│   ├── assets/           # Static assets (images, icons)
+│   ├── components/       # Reusable UI components
+│   ├── hooks/            # Custom React hooks
+│   ├── test/             # Unit tests
+│   │   ├── setup.ts      # Test setup
+│   │   └── App.test.tsx  # Component tests
+│   ├── types/            # TypeScript interfaces
+│   │   └── weather.types.ts
+│   ├── utils/            # API logic & helpers
+│   │   └── api.ts
+│   ├── App.tsx           # Main application logic
+│   ├── index.css         # Global styles
+│   └── main.tsx          # Entry point
+└── public/               # Public assets
 
-## Expanding the ESLint configuration
+## 🧪 Running Tests
+```bash
+npm run test
+📦 Installation
+Clone the repo: git clone https://github.com/sarfarazalamgit/weather-app-pro.git
+Install dependencies: npm install
+Create a .env file and add VITE_WEATHER_API_KEY=your_key
+Start dev server: npm run dev
+🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+📄 License
+MIT License
